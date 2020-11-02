@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     func fetchVideo(searchTitle: String) {
-        guard let url = URL(string: "https://www.googleapis.com/youtube/v3/search?part=snippet&q=\(searchTitle)&key=AIzaSyDI0MDJYvL6MxY8sw7aS1wU9vXzk_IC7m4&type=video&maxResults=50".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+        guard let url = URL(string: "https://www.googleapis.com/youtube/v3/search?part=snippet&q=\(searchTitle)&key=yourAPI-KEY&type=video&maxResults=50".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
 
             print("url:25 is invalid")
             return }

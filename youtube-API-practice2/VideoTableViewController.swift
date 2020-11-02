@@ -16,7 +16,7 @@ class VideoTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = video?.snippet.title
         guard let videoId = video?.id.videoId,
-              let url = URL(string: "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet,replies&videoId=\(videoId)&key=AIzaSyDI0MDJYvL6MxY8sw7aS1wU9vXzk_IC7m4") else {
+              let url = URL(string: "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet,replies&videoId=\(videoId)&key=yourAPI-KEY") else {
             print("url is invalid")
             return }
         
